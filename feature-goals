@@ -1,0 +1,36 @@
+
+Improvements:
+Smoother character movement
+Random seed before "discovering" item attributes e.g.:
+
+discoverWhetherCursed { // method run just after wearing item;
+    GetRandomSeed();
+    Item.RandomizeCurseStatus();
+}
+
+Idea for game object hierachy:
+
+class PlayerObject {
+    // Everything to do with player
+}
+class Plane {
+    // master class for the spatial division of the world into tiles (?)
+    // in lore, the spatial plane
+    // divided into zones
+}
+
+}
+class Dungeon {
+    // dungeon zone - the building itself?
+}    
+
+class Surface {
+    // surface zone
+}    
+        
+    
+    
+Herbology: find mushrooms, plants underground
+
+Retain:
+Symboll-y graphics for items on tiles;
