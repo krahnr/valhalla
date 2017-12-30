@@ -1,36 +1,52 @@
 
 Improvements:
 Smoother character movement
-Random seed before "discovering" item attributes e.g.:
+Random seed before "discovering" item attributes - AND/OR - improve curses. you only discover whether an item is cursed after
+using it for a while. e.g. you can notice that it isn't performing well in combat after one or two battles, despite appearing
+to have good attributes. if you're lucky, you get a message ~"something about this weapon feels off".  After using it one or
+two more times, a message will pop up saying that you have realized the item is cursed, but you can't bring yourself to remove 
+it.
 
-discoverWhetherCursed { // method run just after wearing item;
+Better combat: slower, take turns instead of instantaneous
+Reveal rolls in combat
+Fewer obviously inferior items.
+Show object attributes within GUI
+Icons above village buildings
+
+Random ideas:
+Herbology: find mushrooms, plants underground
+
+
+Code snippets:
+
+onEquip() { // method run just after wearing item;
     GetRandomSeed();
     Item.RandomizeCurseStatus();
 }
 
 Idea for game object hierachy:
 
-class PlayerObject {
+PlayerObject {
     // Everything to do with player
 }
-class Plane {
+BoardManager { 
     // master class for the spatial division of the world into tiles (?)
     // in lore, the spatial plane
     // divided into zones
 }
 
 }
-class Dungeon {
+Dungeon {
     // dungeon zone - the building itself?
 }    
 
-class Surface {
+Surface {
     // surface zone
 }    
         
     
     
-Herbology: find mushrooms, plants underground
+
 
 Retain:
 Symboll-y graphics for items on tiles;
