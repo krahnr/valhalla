@@ -8,14 +8,24 @@ two more times, a message will pop up saying that you have realized the item is 
 it.
 
 Better combat: slower, take turns instead of instantaneous
-Reveal rolls in combat
+Reveal rolls in combat?
 Fewer obviously inferior items.
 Show object attributes within GUI
 Icons above village buildings
 Single-use items like scrolls and potions are more useful - they are your first introduction to more powerful spells. you encounter
 these before you start learning the spell or find multiple-use objects.
 attribute for attack chance/damage
-Keep "special rooms"
+Keep "special rooms" and also have some more common "special" rooms
+Effects upon encountering monster that scale with the level difference between player and monster.
+    E.g.: if((Player.level-Monster.level)>3) {
+            visual effect around monster;
+            slow motion;
+            super scary music plays;
+        }
+        else
+            normal combat music plays;
+keep right-click to display info about item;
+            
 
 Random ideas:
 Herbology: find mushrooms, plants underground
